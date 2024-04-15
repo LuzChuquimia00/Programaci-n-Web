@@ -17,7 +17,7 @@ h2{
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     /*grid-template-rows: 350px;*/
     grid-auto-rows: auto;
-    gap: 20px;
+    gap: 20px; /*Espacio entre elementos*/ 
 }
 .fotoDinamica{
     width: 75%;
