@@ -1,0 +1,24 @@
+.CentrarEnElMedio{
+    text-align: center;
+}
+
+.Borde{
+    background-color:rgb(109, 201, 196);
+    border: 3px solid #2f20b6;
+    border-style: inset;
+    border-radius: 16px;
+}
+
+.TamañoLetra{
+    font-size: 115%; /*tamaño de letra o entre otras cosas*/
+
+}
+.TamañoBoton{
+    font-size: 115%; /*tamaño de letra o entre otras cosas*/
+
+}
+.TamañoTitulo{
+    font-size: 210%; /*tamaño de letra o entre otras cosas*/
+
+}
+
