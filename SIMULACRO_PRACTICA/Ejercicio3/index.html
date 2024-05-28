@@ -7,19 +7,28 @@
     <title>Pagina de Contacto</title>
   </head>
   <body>
-    <main class="CentrarEnElMedio">
-      <div class="Borde">
-        <h1>INICIA</h1>
-        <div class="TamañoLetra">
-          <label for="nombre">Nombre: </label>
-          <input class="TamañoBoton" id="nombre" placeholder="nombre" />
-          <label for="Correo">Correo Electronico: </label>
-          <input class="TamañoBoton" id="Correo" placeholder="Correo" />
-          <label for="Comentario">Comentario: </label>
-          <textarea class="TamañoLetra" placeholder="comenta.."></textarea>
-          <button class="TamañoBoton">ENVIAR</button>
+    <form autocomplete="off">  <!-- <autocomplete> es para que no te lo autocomplete 
+      x ejemplo: cuando ingresas tu nombre en iniciar sesion en una pagina y sueles 
+      ingregsar ahi, tonces te lo auto quiere completar tu nombre pero este comando lo
+      que hace es no autocompletar tu nombre-->
+      <h2>Conctato</h2>
+        <!--<div class="form-txt">
+        <a href="#">Politica de privacidad</a>
+        <a href="#">Terminos y condiciones</a>
+        </div>-->
+        <div class="input-group" autocomplete="off">
+
+          <input type="text" name ="Nombre" placeholder="Nombre">
+
+          <input type="tel" name="Telefono" placeholder="Telefono">
+        
+          <input type="email" name="email" placeholder="Email">
+
+          <textarea name="message" cols="30" rows="5" placeholder="Mensaje(opcional)"></textarea>
+        
+          <input class="btn" type="submit" value="Enviar">
+
         </div>
-      </div>
-    </main>
+    </form>
   </body>
 </html>
