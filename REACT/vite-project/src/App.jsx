@@ -2,10 +2,11 @@ import { Estado } from "./components/estado/Estado";
 import { Contenido } from "./components/miPrimerComponente/MiPrimerComponente";
 import GetPosts from "./components/GetPosts";
 import NuevoProyecto from "./components/NuevoProyecto";
+import { ConvertidorMonedas } from "./components/convertidor/convertidorPesos";
 function App() {
   return (
     <>
-      <NuevoProyecto />
+      <ConvertidorMonedas />
     </>
   );
 }
