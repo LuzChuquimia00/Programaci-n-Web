@@ -6,7 +6,7 @@ import { ConvertidorMonedas } from "./components/convertidor/convertidorPesos";
 function App() {
   return (
     <>
-      <ConvertidorMonedas />
+      <GetPosts />
     </>
   );
 }
