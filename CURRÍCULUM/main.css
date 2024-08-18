@@ -3,18 +3,17 @@
 }
 
 .caja-foto{
-    width: 30%;  /*ANCHO*/
+    width: 60%;  /*ANCHO*/
 
 }
 
 .imagen-cv{
     max-width: 260px; /* MAXIMA RESOLUCION(EN ANCHO) DE PIXELES, SI HAY LIMITES*/
-
-    height: 200px;  /* LARGO(SIN LIMITES)*/
+    height: 260px;  /* LARGO(SIN LIMITES)*/
 }
 
 .caja-titulo{
-    width: 75%;
+    width:auto;
     color: blanchedalmond;  /* Para las letras*/
     background-color: cornflowerblue;  /* fondo*/
 }
