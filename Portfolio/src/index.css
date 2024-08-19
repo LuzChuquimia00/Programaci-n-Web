@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@
   
   /* Estilo del header */
   header {
-    background: #304e35e0;
+    background: #272958e0;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;

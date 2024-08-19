@@ -1,46 +1,35 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect,useState } from "react";
 
-export default function NuevoProyecto() {
-  const [personajes, setData] = useState({});
-  useEffect(() => {
+export function NuevoProyecto() {
+    const [personajes, setPersonaje] = useState([]);
+
+   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character")
-      .then((response) => response.json())
-      .then((personajes) => setData(personajes.results));
-  }, []);
+    .then(response => response.json())
+    .then(personajes => setPersonaje(personajes.results));
+   },[]); 
 
-  return (
-    <>
-      {!personajes ? (
-        <>Loading...</>
+
+   return( 
+   <>
+     {!personajes ? (
+       <> loading... </> 
       ) : (
-        <>
-          {personajes.map((personaje) => (
-            <div>
-              <h2>
-                objeto title: {personaje.name}
-                id:{personaje.id}
-              </h2>
-              <p>body: {personaje.location.name}</p>
+        <> 
+        <div className="grilla_3x3">      
+          {personajes.map((personaje, index) => (
+            <div key={index} className="cartas">
+              <h2>Nombre: {personaje.name}</h2>
+              <img src={personaje.image}/>
+              <p> Id: {personaje.id}</p>
+              <p> Status: {personaje.status}</p>
+              <p> Especie: {personaje.species} </p>
+              <p> Genero: {personaje.gender}</p>
             </div>
-          ))}
+        ))}
+        </div>        
         </>
-      )}
-    </>
+     )}
+   </>
   );
-}
-
-const arrayPersonajes = [
-  {
-    name: "Rick",
-    lastName: "Sanchez",
-    planet: "Earth",
-    image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-  },
-  {
-    name: "Morty",
-    lastName: "Smith",
-    planet: "Earth",
-    image: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
-  },
-];
+};

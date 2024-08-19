@@ -35,3 +35,8 @@
   margin: 3px;
   padding: 5px;
 }
+
+.fondo{
+  background-image: url("fondo.png"); /*para poner una imagen al fondo*/
+
+}
